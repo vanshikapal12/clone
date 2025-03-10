@@ -24,3 +24,43 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.grBorder:hover {
+  border: 2px solid transparent;
+  background: linear-gradient(30deg, yellow, purple) border-box;
+  height: 25px;
+  border-radius: 20px;
+}
+/* Add this to your global CSS file */
+/* Add this to your global CSS file */
+.gradient-border {
+  position: relative;
+  padding: 4px; /* Adjust padding as needed */
+  background: linear-gradient(
+    45deg,
+    blue,
+    pink,
+    yellow,
+    purple
+  ); /* Updated gradient colors */
+  border-radius: 8px; /* Optional: to round corners of the border */
+}
+
+.gradient-border img {
+  display: block;
+  border-radius: 8px; /* Optional: to match the border radius */
+}
+/* Add this to your global CSS file */
+.gradient-text {
+  background: linear-gradient(
+    45deg,
+    pink,
+    purple,
+    rgb(67, 67, 231),
+    yellow
+  ); /* Your gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
