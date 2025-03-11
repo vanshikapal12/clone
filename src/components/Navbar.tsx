@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { FaMoon } from "react-icons/fa"; // Import FontAwesome icons
 import Link from "next/link";
+// import { ModeToggle } from "./ModeToggle";
 const navItem = [
   "home",
   "products",
@@ -37,7 +38,7 @@ const Navbar = () => {
             </div>
           </div>
           {/* Added text-sm class */}
-          <FaMoon className="text-white text-sm" />
+          {/* <ModeToggle /> */}
           <button className="text-black bg-white hover:text-white text-sm py-4 w-15 h-10">
             Login
           </button>

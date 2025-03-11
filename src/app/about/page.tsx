@@ -10,6 +10,10 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import CompanyValuesSection from "./company-value-section";
+import Footer from "@/components/responsive-footer";
+
+import { WorldMapDemo } from "./WorldMapDemo";
+// import Footer from "@/components/reponsive-footer";
 
 const AboutPage = () => {
   return (
@@ -44,7 +48,7 @@ const AboutPage = () => {
         </div>
       </div>
       <div className="w-full p-4 mt-5 text-center dark:bg-[#404040] bg-gray-100 py-8 px-2 rounded-lg">
-        <div className="w-50 h-10 p-1.5 text-center mx-auto rounded-lg font-bold bg-gray-500">
+        <div className="w-50 h-10 p-1.5 text-center mx-auto rounded-lg font-bold bg-black">
           Our Standards
         </div>
         <h1 className="text-6xl mt-4 mb-2 font-bold">
@@ -244,7 +248,7 @@ const AboutPage = () => {
         </Tabs>
       </div>
       {/* Fourth Section */}
-      <div className="container mx-auto mt-10 p-4 flex flex-col lg:flex-row h-180 ">
+      <div className="container mx-auto mt-10 p-4 flex flex-col lg:flex-row h-180 bg-amber-700 ">
         <div className="lg:w-1/2 p-4 h-130 mt-20">
           <h2 className="mb-6 text-4xl font-bold tracking-tight dark:text-white sm:text-5xl">
             The
@@ -377,24 +381,7 @@ const AboutPage = () => {
           />
         </div>
       </div>
-      ///bhnj
       {/* Fifth Section */}
-      {/* <div className=" h-500 mx-auto p-4 flex flex-col lg:flex-row mt-3 backdrop-blur-2xl bg-amber-900"> */}
-      //first div
-      {/* <div className="container mx-auto mt-20 p-4 flex flex-col lg:flex-row bg-amber-400 h-60"> */}
-      {/* <div className="w-210 h-50 bg-amber-500 ml-50">
-            <div className="w-26 h-8 p-1.5 text-center mx-auto rounded-lg font-bold bg-gray-500">
-              Our Values
-            </div>
-            <h2 className="text-6xl mt-4 mb-2 font-bold ml-15">
-              Our Philosophy in<span className="gradient-text"> Action</span>
-            </h2>
-            <p className="mt-2 text-gray-400 text-2xl">
-              At Everything Talent, Bringing Our Values to Life Through
-              Meaningful Actions
-            </p>
-          </div> */}
-      {/* </div> */}
       <div className=" mx-auto p-4 flex flex-col mt-3 backdrop-blur-2xl bg-amber-900relative h-full w-full bg-white dark:bg-slate-950 py-8 sm:py-16 md:py-28 px-4 sm:px-6 lg:px-8">
         {/* First div */}
         <div className="container mx-auto mt-20 p-4 flex flex-col h-60">
@@ -546,7 +533,7 @@ const AboutPage = () => {
           </div>
 
           {/* Fifth div */}
-          <div className="container mx-auto p-4 flex flex-col h-60">
+          <div className="container mx-auto p-4 flex flex-col h-60 bg-amber-900">
             <div className="flex flex-row space-x-4">
               <div className="w-1/2 bg-yellow-300 p-4 rounded-2xl h-50">
                 <div className="text-sm font-medium text-[#6C1717]">10</div>
@@ -571,6 +558,85 @@ const AboutPage = () => {
       //
       <main className="min-h-screen">
         <CompanyValuesSection />
+      </main>
+      <main className="bg-black text-white min-h-screen flex flex-col items-center">
+        <section className="text-center h-[70vh] w-full bg-slate-950 grid place-content-center">
+          <div className="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:54px_54px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"></div>
+          <h6 className="bg-gray-600 text-center w-50 font-bold rounded-sm ml-43">
+            Our Values & Milestones
+          </h6>
+          <h1 className="2xl:text-7xl text-5xl px-8 font-semibold tracking-tight leading-[120%]">
+            Our <span className="gradient-text">Journey</span>
+          </h1>
+          <p className="mt-8 text-center">
+            Explore the milestones that have shaped our path to innovation,
+            where every <br /> step brings us closer to transforming the future.
+          </p>
+          <span className="relative z-10 flex items-center  mt-10 gap-2 bg-amber-50 rounded-sm w-70 text-black r-50 h-12 ml-30 pl-14 font-bold text-center">
+            Subscribe to Updates
+            <svg
+              className="w-4 h-4"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 20 16"
+            >
+              <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"></path>
+              <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"></path>
+            </svg>
+          </span>
+        </section>
+
+        <section className=" bg-white  rounded-lg space-y-6 text-black w-8/9 flex flex-col md:flex-row h-full p-8 gap-12  shadow-xl bg-gradient-to-br from-slate-200 via-[#F5F3FC] to-[#e9d5ff00] dark:from-black dark:via-slate-900 dark:to-slate-950">
+          {/* First Inner Div */}
+          <div className=" w-120">
+            <p className="text-2xl font-bold mb-2 text-purple-500">
+              Everything Ai 2.0
+            </p>
+            <h1 className=" text-white font-semibold mb-2 text-4xl -mt-3">
+              2024
+            </h1>
+            <p className="mb-4 text-white">
+              Launched Everything AI 2.0 with advanced AI-powered analytics,
+              customizable insights, and expanded user features.
+            </p>
+            <h2 className="text-lg font-semibold">Another Subtitle H2</h2>
+            <div className="p-4 bg-gray-500 rounded w-53 h-20 text-purple-400 font-bold">
+              50K+
+              <p className="text-gray-300">Users</p>
+            </div>
+            <div className="p-4  rounded w-53 h-20 -mt-20 ml-58 font-bold  text-purple-400">
+              98%
+              <p className="text-gray-300">Accuracy</p>
+            </div>
+            <div className="p-4 bg-gray-500 rounded w-52 h-20 mt-5  text-purple-400 font-bold">
+              2x faster
+              <p className="text-gray-300">Processing</p>
+            </div>
+          </div>
+
+          {/* Second Inner Div */}
+          <div className="flex space-x-6 ">
+            <div className="flex-1 w-170">
+              <img
+                src="/2024.webp"
+                alt="Placeholder Image"
+                className="rounded-lg w-300 h-100 object-cover"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+      <section className="relative">
+        <div className="absolute inset-0">
+          <WorldMapDemo />
+        </div>
+      </section>
+      <main className="min-h-screen flex flex-col">
+        <div className="flex-1 p-8">
+          <h1 className="text-3xl font-bold">Main Content Area</h1>
+          <p className="mt-4">This is where your main content would go.</p>
+        </div>
+        <Footer />
       </main>
     </>
   );

@@ -15,16 +15,16 @@ export default function CompanyValuesSection() {
   const isDark = "dark";
 
   return (
-    <section className="flex flex-col lg:flex-row w-full">
+    <section className="flex flex-col lg:flex-row w-full  h-200 mt-180 container ml-20">
       {/* Left side - Image */}
-      <div className="w-full lg:w-1/2 relative min-h-[400px] lg:min-h-[600px]">
-        {/* <Image
-          src="/security.jpg"
+      <div className="w-70 lg:w-1/2 relative h-200 ">
+        <Image
+          src="/insight-img-2.webp"
           alt="Professional working with data visualizations"
           fill
-          className="object-cover object-center"
+          className="object-cover object-center rounded-4xl h-130 p-4 "
           priority
-        /> */}
+        />
       </div>
 
       {/* Right side - Values */}
