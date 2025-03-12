@@ -4,14 +4,14 @@ import { Twitter, Linkedin, Youtube, Facebook } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-12 px-4 md:px-8 lg:px-12 ">
+    <footer className="bg-black text-white py-12 px-4 md:px-8 lg:px-12 mt-5 ">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and Company Info */}
           <div className="space-y-6">
             <div className="flex items-center">
               <Image
-                src="/placeholder.svg?height=80&width=120"
+                src="/acme-logo-dark.png"
                 alt="Everything Talent Logo"
                 width={120}
                 height={80}
@@ -229,12 +229,12 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
+        {/* <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400 text-sm">
           <p>
             &copy; {new Date().getFullYear()} Everything Talent. All rights
             reserved.
           </p>
-        </div>
+        </div> */}
       </div>
     </footer>
   );
